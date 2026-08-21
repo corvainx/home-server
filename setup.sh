@@ -5,12 +5,12 @@ echo "==> Updating packages"
 pkg update -y && pkg upgrade -y
 
 echo "==> Installing core tools"
-pkg install -y openssh tmux git
+pkg install -y openssh git python nodejs wget curl nano vim nmap htop neofetch
 
 echo "==> Setting up storage access"
 termux-setup-storage
 
-echo "==> Installing necessary packages + GUI stack (XFCE + VNC)"
+echo "==> Installing GUI stack (XFCE + VNC)"
 pkg install -y x11-repo
 pkg install -y tigervnc xfce4
 
