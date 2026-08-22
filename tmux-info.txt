@@ -38,3 +38,4 @@ MISC
 -----
 tmux -V                     Check installed tmux version
 exit                        Close current pane/window (or Ctrl+D)
+
