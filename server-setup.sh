@@ -16,7 +16,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 echo "==> Setup complete"
 echo ""
 echo "To start the file server:"
-echo "  dufs -p 8000 ~/storage/cloud --allow-upload"
+echo "  dufs -p 8000 ~/storage/cloud --allow-upload -a 'admin:test1234@/:rw'  "
 echo ""
 echo "Access it at:"
 echo "  http://localhost:8000        (on this phone)"
