@@ -5,7 +5,7 @@ echo "==> Updating packages"
 pkg update -y && pkg upgrade -y
 
 echo "==> Installing core tools"
-pkg install -y openssh git python nodejs wget curl nano vim nmap htop neofetch
+pkg install -y openssh git python nodejs tmux wget curl nano vim nmap htop neofetch
 
 echo "==> Setting up storage access"
 termux-setup-storage
