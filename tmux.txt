@@ -1,0 +1,40 @@
+TMUX CHEAT SHEET
+================
+
+SESSION MANAGEMENT
+-------------------
+tmux new -s <name>          Start a new named session
+tmux ls                     List all active sessions
+tmux attach -t <name>       Attach (enter) a specific session
+tmux attach                 Attach to the last/only session
+tmux kill-session -t <name> Kill a specific session
+tmux kill-server            Kill all tmux sessions
+
+INSIDE A SESSION (prefix key = Ctrl+B, press then release, then next key)
+--------------------------------------------------------------------------
+Ctrl+B, D                   Detach from session (keeps running in background)
+Ctrl+B, $                   Rename current session
+Ctrl+B, C                   Create a new window (tab) in this session
+Ctrl+B, ,                   Rename current window
+Ctrl+B, N                   Go to next window
+Ctrl+B, P                   Go to previous window
+Ctrl+B, 0-9                 Jump to window by number
+Ctrl+B, W                   List all windows (interactive picker)
+
+PANES (splitting the screen inside one window)
+-------------------------------------------------
+Ctrl+B, %                   Split pane vertically (side by side)
+Ctrl+B, "                   Split pane horizontally (top/bottom)
+Ctrl+B, Arrow key           Move between panes
+Ctrl+B, X                   Close current pane
+Ctrl+B, Z                   Zoom/unzoom current pane (fullscreen toggle)
+
+COPY MODE (scroll back / select text)
+----------------------------------------
+Ctrl+B, [                   Enter copy/scroll mode (use arrows or PgUp/PgDn)
+Q                           Exit copy mode
+
+MISC
+-----
+tmux -V                     Check installed tmux version
+exit                        Close current pane/window (or Ctrl+D)
